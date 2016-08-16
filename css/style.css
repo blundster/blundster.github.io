@@ -1,0 +1,160 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	margin: 0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+header {
+	z-index: 999;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	
+		width: 100%;
+	
+	background-color: red;
+}
+
+nav {
+	margin-left: 100px;
+	
+	border-top: 10px solid orange;
+	border-left: 10px solid orange;
+}
+
+nav a {
+	display: inline-block;
+	
+	padding: 10px;
+	
+	color: navy;
+	font-size: 1.1em;
+	font-variant: small-caps;
+}
+
+nav a:hover {
+	text-decoration: none;
+	background-color: navy;
+	color: white;
+}
+
+#logo {
+	position: absolute;
+	bottom: -45px;
+
+	padding: 0px 5px;
+		width: 100px;
+}
+
+article {
+	margin: 100px 60px 100px 160px;
+	padding: 1px 20px;
+	
+	background-color: gainsboro;
+}
+
+article p span {
+	color: red;
+}
+
+article p:first-letter{
+	color: green;
+	font-size: large;
+}
+
+aside {
+	position: fixed;
+	top: 0px;
+	
+		width: 110px;
+	 height: 100%;
+	
+	padding-top: 150px;
+	
+	border-right: 10px solid orange;
+	background-color: silver;
+}
+
+aside img{
+	display: block;
+	
+		padding: 10px;
+			width: 100%;
+}
+
+footer {
+	position: fixed;
+	bottom: 0px;
+	
+			width: 100%;
+	   height: 52px;
+	min-width: 450px;
+	
+	background-color: navy;
+}
+
+footer ul{
+	margin: 0px;
+	margin-left: 100px;
+		padding: 0px;
+	
+	color: white;
+	font-size: 0.9em;
+	border-left: 10px solid orange;
+	border-bottom: 10px solid orange;
+}
+
+footer li {
+	display: inline-block;
+	
+	padding: 10px;
+}
+
+footer p {
+	position: absolute;
+	
+	margin: 0px;
+	margin-left: 100px;
+		padding: 10px;
+			width: 100%;
+	
+	color: white;
+	font-size: 0.9em;
+	border-left: 10px solid orange;
+	border-bottom: 10px solid orange;
+}
+
+footer button{
+	float: right;
+	background-color: orange;
+	margin: 10px;
+}
+	
+/*
+mój styl{
+	z-index:
+	display: inline; block; inline-block; flex;
+	position: static; relative; absolute; fix;
+	top: left: bottom: right:
+	
+	margin: 
+			padding: 
+				width: 
+	
+	background:
+	border:
+}
