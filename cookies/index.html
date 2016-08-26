@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://use.fontawesome.com/334e968c7d.js"></script>
+    <script>
+    
+      function checkCookies() {
+        if (navigator.cookieEnabled == true) {
+          text = "Cookies are enabled.";
+          showCookie();
+        } else {
+          text = "Cookies disabled.";
+        }
+        console.log(text);
+      }
+      
+      function showCookie() {
+        if(!document.cookie) {
+          document.querySelector('#cookie').style.display = 'block';
+          document.querySelector('.fa-minus-circle').onclick = hideCookie;
+          document.querySelector('.fa-times-circle').onclick = eatCookie;
+        }
+      }
+      
+      function hideCookie(event) {
+        document.querySelector('#cookie').style.display = 'none';
+      }
+      
+      function eatCookie(event) {
+        document.querySelector('#cookie').style.display = 'none';
+        document.cookie = "eaten = 1";
+      }
+      
+    </script>
+    <style>
+      #cookie{
+        display: none;
+        position: fixed;
+        bottom: 50px;
+        left: 50px;
+        
+        width: 250px;
+        
+        border: 3px solid cornflowerblue;
+        background-color: white;
+      }
+      #cookie div {
+        padding: 5px 10px;
+        
+        color: white;
+        text-align: right;
+        
+        background-color: dodgerblue;
+      }
+      #cookie span {
+        cursor: pointer;
+      }
+      #cookie p {
+        padding: 5px;
+        text-align: justify;
+        color: dodgerblue;
+        font-family: monospace;
+      }
+    </style>
+  </head>
+  
+  <body onload="checkCookies()">
+    <div id="cookie">
+      <div>
+        <span class="fa fa-minus-circle"></span>
+        <span class="fa fa-times-circle"></span>
+      </div>
+      <p>
+        Ta strona wykorzystuje pliki cookies. Dowiedz się więcej o naszej <a href="http://drive.google.com/file/d/0B9PIJvmdq6SWZWw1dXBiZDlYY2c/view?usp=sharing" target="_blank">Polityce Prywatności</a><br><br> >_
+      </p>
+    </div>
+  </body>
+</html>
