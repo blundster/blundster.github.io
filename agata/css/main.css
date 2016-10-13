@@ -1,0 +1,204 @@
+body {
+    margin: 50px 0 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.row-pad-30 {
+    padding-top: 30px !important;
+}
+
+.navbar {
+    margin-bottom: 1px;
+    padding: 0;
+}
+
+.navbar .top-bar {
+    background-color: #ca2129;
+    height: 5px;
+}
+
+.navbar li {
+    color: #555555;
+}
+
+.navbar li:hover {
+    background-color: #cccccc !important;
+}
+
+.login, .register {
+    margin-top: 1px;
+}
+
+.login:hover, .register:hover {
+    background-color: #cccccc;
+}
+
+.login a, .register a {
+    color: #ffffff !important;
+}
+
+.login {
+    background-color: #ca2129;
+    padding-right: 22px;
+    padding-left: 22px;
+}
+
+.register {
+    background-color: #2f98cc;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.jumbotron {
+    background: url("../images/waterdrop.jpg");
+    background-repeat: no-repeat;
+    height: 350px;
+    padding: 0;
+    background-position: center center;
+}
+
+.jumbotron [class*="col-"] {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #eee;
+    background-color: rgba(86, 61, 124, .15);
+    border: 1px solid rgba(86, 61, 124, .2);
+    overflow: auto;
+    height: 350px;
+}
+
+.jumbotron-content {
+    color: #ffffff;
+}
+
+.jumbotron h1 {
+    font-size: 1.7em;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ffffff;
+}
+
+.box {
+    color: #ffffff;
+    padding: 1px 15px 20px;
+}
+
+.blue-box {
+    background-color: #2e98cc;
+}
+
+.red-box {
+    background-color: #ca2129;
+}
+
+button.read-more {
+    margin-top: 7px;
+}
+
+.blue-box button.read-more {
+    background: #2b8cbc;
+}
+
+.blue-box button.read-more:hover {
+    background: #20749d;
+}
+
+.red-box button.read-more {
+    background: #bf1e26;
+}
+
+.red-box button.read-more:hover {
+    background: #86161b;
+}
+
+.tooltip1 {
+    border-bottom: #ffffff dotted 1px;
+}
+
+.panel .panel-blue-heading {
+    background: #2e98cc;
+    color: #ffffff;
+}
+
+a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.active:focus {
+    background: #ca2129;
+    border: #ca2129;
+}
+
+/*About*/
+.well {
+    padding-top: 0;
+}
+
+/*#contact.well {*/
+/*padding-top: 30px;*/
+/*}*/
+
+.white-well {
+    background-color: #ffffff;
+}
+
+.tab-pane {
+    margin-top: 7px;
+}
+
+.panel-heading a {
+    text-decoration: none;
+}
+
+#blog img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#blog button {
+    background-color: #2b8cbc;
+    width: 100%;
+    margin-top: 15px;
+}
+
+#blog button:hover {
+    background-color: #20749d;
+}
+
+#blog small.post-info {
+    width: 100%;
+    display: block;
+    padding: 5px;
+    margin: 5px 0 10px 0;
+    background: #f4f4f4;
+    border: #dddddd solid 1px;
+    border-radius: 10px;
+}
+
+iframe.gmap {
+    width: 100%;
+    border: #cccccc 1px solid;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+#address {
+    margin: 35px 0 15px;
+}
+
+footer {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    text-align: center;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+    .navbar-header {
+        float:none;
+    }
+}
