@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <title>Blog - Clean & Clear</title>
+
+    <script>
+        $(document).ready(function () {
+            $("#loginModal").modal("hide");
+            $("#registerModal").modal("hide");
+        });
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="top-bar"></div>
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="images/logo.png"> </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="innovate.html" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                       aria-haspopup="true"
+                       aria-expanded="false">Innovate<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="innovate.html#learn">Learn</a></li>
+                        <li><a href="innovate.html#create">Create</a></li>
+                        <li><a href="innovate.html#teach">Teach</a></li>
+                    </ul>
+                </li>
+                <li class="active"><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <li class="login" id="#loginModal" data-toggle="modal" data-target="#loginModal"><a href="#">Login</a>
+                </li>
+                <li class="register" id="#registerModal" data-toggle="modal" data-target="#registerModal"><a href="#">Register</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="loginModalLabel">Login form</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Remember me
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-default">Sing in</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="registerModalLabel">Register form</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="firstNameInput" class="col-sm-4 control-label">First Name</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="firstNameInput" placeholder="First Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastNameInput" class="col-sm-4 control-label">Last Name</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="lastNameInput" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1" class="col-sm-4 control-label">Email</label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="passwordInput" class="col-sm-4 control-label">Password</label>
+                        <div class="col-sm-8">
+                            <input type="password" class="form-control" id="passwordInput" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPasswordInput" class="col-sm-4 control-label">Confirm Password</label>
+                        <div class="col-sm-8">
+                            <input type="password" class="form-control" id="confirmPasswordInput"
+                                   placeholder="Confirm Password">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-default">Sign up</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="row row-pad-30">
+        <div class="col-md-8">
+            <div id="blog" class="well white-well">
+                <h2>Why You Should Use Twitter Bootstrap</h2>
+                <small class="post-info">Posted on November 14, 2013 by Brad Traversy</small>
+                <img src="images/blog1.jpg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cauctor magna lobortis quis. Vestibulum
+                    tincidunt volutpat nisi tellus sit amet ullamcorper mollis, arcu est dignissim odio, quis fringilla
+                    mauris lacus sit amet sapien. In posuere ac erat non sollicitudin. Maecenas ante nibh, imperdiet a
+                    nisl quis, semper rhoncus nisl. Phasellus porta adipiscing risus, sed pellentesque elit eleifend
+                    sed. Fusce scelerisque cursus sapien. Nullam feugiat sollicitudin diam, id tincidunt sem eleifend
+                    at. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In
+                    aliquet scelerisque lectus nec imperdiet.</p>
+                <button class="btn btn-lg btn-primary">Read More</button>
+                <hr>
+                <h2>What Social Networks Should You Be On?</h2>
+                <small class="post-info">Posted on November 14, 2013 by Brad Traversy</small>
+                <img src="images/blog2.jpg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cauctor magna lobortis quis. Vestibulum
+                    tincidunt volutpat nisi tellus sit amet ullamcorper mollis, arcu est dignissim odio, quis fringilla
+                    mauris lacus sit amet sapien. In posuere ac erat non sollicitudin. Maecenas ante nibh, imperdiet a
+                    nisl quis, semper rhoncus nisl. Phasellus porta adipiscing risus, sed pellentesque elit eleifend
+                    sed. Fusce scelerisque cursus sapien. Nullam feugiat sollicitudin diam, id tincidunt sem eleifend
+                    at. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In
+                    aliquet scelerisque lectus nec imperdiet.</p>
+                <button class="btn btn-lg btn-primary">Read More</button>
+                <hr>
+                <h2>Teamwork and Web Development?</h2>
+                <small class="post-info">Posted on November 14, 2013 by Brad Traversy</small>
+                <img src="images/blog3.jpg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cauctor magna lobortis quis. Vestibulum
+                    tincidunt volutpat nisi tellus sit amet ullamcorper mollis, arcu est dignissim odio, quis fringilla
+                    mauris lacus sit amet sapien. In posuere ac erat non sollicitudin. Maecenas ante nibh, imperdiet a
+                    nisl quis, semper rhoncus nisl. Phasellus porta adipiscing risus, sed pellentesque elit eleifend
+                    sed. Fusce scelerisque cursus sapien. Nullam feugiat sollicitudin diam, id tincidunt sem eleifend
+                    at. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In
+                    aliquet scelerisque lectus nec imperdiet.</p>
+                <button class="btn btn-lg btn-primary">Read More</button>
+
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="list-group">
+                <a href="index.html" class="list-group-item">Home</a>
+                <a href="about.html" class="list-group-item">About</a>
+                <a href="innovate.html" class="list-group-item">Innovate</a>
+                <a href="blog.html" class="list-group-item active">Blog</a>
+                <a href="contact.html" class="list-group-item">Contact Us</a>
+            </div>
+            <div class="list-group">
+                <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading">List group item heading</h4>
+                    <p class="list-group-item-text">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
+                        egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac
+                        cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                </a>
+                <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading">List group item heading</h4>
+                    <p class="list-group-item-text">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
+                        egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac
+                        cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                </a>
+                <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading">List group item heading</h4>
+                    <p class="list-group-item-text">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
+                        egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac
+                        cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    Copyright &copy; 2013, Clean & Clear
+</footer>
+</body>
+</html>
